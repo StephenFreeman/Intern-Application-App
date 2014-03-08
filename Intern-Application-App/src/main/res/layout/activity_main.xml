@@ -8,23 +8,27 @@
         android:layout_width="fill_parent"
         android:layout_height="61dp">
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/searchView"
-            android:hint="Explore Zappos' large collection!"
+            android:hint="Shoes, Clothing, Bags, etc."
             android:textIsSelectable="true"
             android:editable="true"
             android:enabled="true"
+            android:clickable="true"
+            android:inputType="text"
             android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_toLeftOf="@+id/searchButton" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search!"
             android:id="@+id/searchButton"
-            android:layout_marginRight="24dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true" />
     </RelativeLayout>

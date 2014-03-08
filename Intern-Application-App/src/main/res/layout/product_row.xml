@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/productButton">
+
+        <ImageView
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:id="@+id/productImage"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/blank"
+            android:contentDescription="@string/hello_world" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productName"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/productImage"
+            android:shadowColor="@android:color/black"
+            android:textColor="#777777"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brandName"
+            android:layout_marginLeft="4dip"
+            android:layout_below="@+id/productName"
+            android:layout_toRightOf="@+id/productImage" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="View"
+        android:id="@+id/productButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:singleLine="false" />
+</RelativeLayout>
