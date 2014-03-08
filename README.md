@@ -12,5 +12,7 @@ App Flow:
 
 I hope you enjoy the application, it was challenging with school, however very rewarding!  If you have any questions, do not hesitate to contact me!
 
+Application was created with Android Studio and was tested with an emulator with API level 18 and my phone at API level 15.
+
 
 
